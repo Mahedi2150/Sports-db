@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sports</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <style>
+      #team {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <h1 class="text-center">Search Your team</h1>
+      <div class="input-group mb-3 w-50 mx-auto">
+        <input
+          id="input-field"
+          type="text"
+          class="form-control"
+          placeholder="Search Your team"
+          aria-label="Recipient's username"
+          aria-describedby="button-addon2"
+        />
+        <button
+          class="btn btn-outline-secondary"
+          type="button"
+          id="button-addon2"
+          onclick="buttonClick()"
+        >
+          Search
+        </button>
+      </div>
+      <div class="mx-auto text-center" id="teamDetails"></div>
+      <h2 class="text-center mt-5 d-none" id="heading">Sports Team</h2>
+      <!-- search result area -->
+      <div id="team" class="text-center"></div>
+    </section>
+
+    <!-- ########################################## -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/sports.js"></script>
+  </body>
+</html>
